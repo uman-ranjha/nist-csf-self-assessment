@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIST CSF 2.0 Self-Assessment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+<h1>NIST CSF 2.0 Self-Assessment</h1>
+<p>Answer 24 plain-language questions across the six NIST Cybersecurity Framework 2.0 functions. Get a score per function, see your weakest areas, and download a plain-language report.</p>
+<p>This is a self-assessment tool. It does not prove compliance, and it does not replace a formal audit.</p>
+</header>
+
+<section class="setup">
+<label for="orgName">Organization name</label>
+<input id="orgName" type="text" value="Example Organization" maxlength="120">
+<p class="hint">Change this to your own organization name before you share the report.</p>
+
+<h2>How scoring works</h2>
+<ul>
+<li><strong>0 - Not implemented:</strong> we do not do this yet.</li>
+<li><strong>1 - Partially implemented:</strong> we do this sometimes, or only in some places.</li>
+<li><strong>2 - Largely implemented:</strong> we do this most of the time, with some gaps.</li>
+<li><strong>3 - Fully implemented:</strong> we do this consistently.</li>
+<li><strong>4 - Fully implemented and reviewed:</strong> we do this consistently and we review and improve it regularly.</li>
+<li><strong>N/A:</strong> this does not apply to us. N/A answers are left out of the score.</li>
+</ul>
+<p>Each function score is the average of its answered questions, shown as a percentage out of 4. The overall score is the average of the six function scores.</p>
+</section>
+
+<form id="assessmentForm">
+<div id="questions"></div>
+<div class="actions">
+<button type="button" id="calcBtn">Calculate my results</button>
+<button type="button" id="resetBtn">Reset all answers</button>
+</div>
+</form>
+
+<section id="results" hidden>
+<h2>Your results</h2>
+<p id="overallLine"></p>
+<div id="chart"></div>
+<h3>Weakest areas</h3>
+<p id="weakLine"></p>
+<h3>Report</h3>
+<div id="report"></div>
+<div class="actions">
+<button type="button" id="downloadBtn">Download report as text</button>
+<button type="button" id="printBtn">Print report</button>
+</div>
+</section>
+
+<footer>
+<p>Built by Uman Ranjha. Based on the NIST Cybersecurity Framework 2.0. Scores are self-reported, so treat them as a starting point for discussion, not as a final verdict.</p>
+</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
