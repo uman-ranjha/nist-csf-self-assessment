@@ -4,7 +4,7 @@ I built this as a single web page you can open and use right away. It asks 24 pl
 
 ## Try it
 
-Open `index.html` in a browser. Or use the GitHub Pages link once Pages is enabled for this repo.
+Open `index.html` in a browser. Or try it live: https://uman-ranjha.github.io/nist-csf-self-assessment/
 
 ## How it works
 
